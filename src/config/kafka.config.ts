@@ -7,8 +7,8 @@ export const kafka = new Kafka({
   clientId: "chat-app",
   brokers: [process.env.KAFKA_BROKER!],
   ssl: {
-    ca: [process.env.KAFKA_CA!],  // load directly from env
-  },
+   ca: [process.env.KAFKA_CA!],
+ },
   sasl: {
     mechanism: "plain",
     username: process.env.KAFKA_USERNAME!,
